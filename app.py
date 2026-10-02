@@ -24,7 +24,7 @@ st.write("Panel operativo para la supervisión de microclima y detección tempra
 @st.cache_data
 def cargar_datos_sensores():
     np.random.seed(42)
-    fechas = pd.date_range(start='2026-10-01 06:00:00', periods=48, freq='H')
+    fechas = pd.date_range(start='2026-10-01 06:00:00', periods=48, freq='h')
     bloques = ['Bloque Alstroemeria 1', 'Bloque Alstroemeria 2', 'Bloque Rosas 1']
     
     data = []
